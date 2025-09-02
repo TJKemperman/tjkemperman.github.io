@@ -1,0 +1,62 @@
+body {
+    background-color: lightblue;
+    padding-top: 50px;
+}
+
+.parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+    grid-column: 1 / 4;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.left-side {
+    grid-column: 1 / 2;
+}
+
+main {
+    grid-column: 2 / 3;
+}
+
+.right-side {
+    grid-column: 3 / 4;
+}
+
+footer {
+    grid-column: 1 / 4;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: lightseagreen;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(27, 152, 146);
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}

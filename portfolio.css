@@ -1,6 +1,10 @@
 body {
     background-color: lightblue;
     padding-top: 50px;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .parent {
@@ -15,6 +19,7 @@ header {
     right: 0;
     left: 0;
     z-index: 999;
+    box-shadow: 0px 5px 10px #a1c2bc;
 }
 
 .left-side {
@@ -23,6 +28,7 @@ header {
 
 main {
     grid-column: 2 / 3;
+    flex: 1;
 }
 
 .right-side {
@@ -30,33 +36,120 @@ main {
 }
 
 footer {
+    background-color: rgb(99, 169, 255);
     grid-column: 1 / 4;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    box-shadow: 0px 0px 10px 0.5px #000000;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: lightseagreen;
+    background-color: rgb(202, 240, 238);
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    width: 100px;
+    border-right: 2px solid #7ff0d3;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: rgb(27, 152, 146);
-    color: black;
+    background-color: rgb(162, 206, 203);
+    color: #ffffff;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: #04AA6D;
-    color: white;
+    color: black;
+}
+
+.personal-info {
+    background-color: rgb(202, 237, 247);
+    padding: 5px;
+    padding-bottom: 10px;
+    width: 65%;
+    border: 1px solid;
+    border-color: rgb(165, 213, 229);
+    border-radius: 16px;
+    margin: 7.5px;
+    box-shadow: 5px 4px #3a6074;
+}
+
+.personal-info p {
+    line-height: 2;
+}
+
+.personal-motivation {
+    background-color: rgb(135, 222, 248);
+    padding: 5px;
+    width: 65%;
+    border: 1px solid;
+    border-color: rgb(165, 213, 229);
+    border-radius: 16px;
+    margin: 7.5px;
+    box-shadow: 5px 4px #3a6074;
+}
+
+.personal-motivation p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.curricular-activities {
+    background-color: rgb(59, 199, 245);
+    padding: 5px;
+    width: 65%;
+    border: 1px solid;
+    border-color: rgb(165, 213, 229);
+    border-radius: 16px;
+    margin: 7.5px;
+    margin-bottom: 15px;
+    box-shadow: 5px 4px #3a6074;
+}
+
+.curricular-activities p {
+    line-height: 2;
+}
+
+.curricular-activities .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+.curricular-activities .column {
+    flex: 30%;
+    padding: 0 4px;
+}
+.curricular-activities .column p {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.personal-image {
+    float: left;
+    padding-left: 10px;
+    height: 275px
+}
+
+.personal-image p {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
 }

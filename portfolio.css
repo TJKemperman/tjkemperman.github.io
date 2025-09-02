@@ -49,7 +49,7 @@ footer {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: rgb(202, 240, 238);
+    background-color: rgb(144, 227, 250);
     overflow: hidden;
 }
 
@@ -62,13 +62,13 @@ footer {
     text-decoration: none;
     font-size: 17px;
     width: 100px;
-    border-right: 2px solid #7ff0d3;
+    border-right: 2px solid #7fd2f0;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: rgb(162, 206, 203);
-    color: #ffffff;
+    background-color: rgb(77, 231, 248);
+    color: #797979;
 }
 
 /* Add a color to the active/current link */

@@ -89,6 +89,24 @@ article {
     box-shadow: 5px 4px #3a6074;
 }
 
+.blog-container {
+    float:left;
+    width: 100%;
+}
+
+.blog {
+    background-color: #e1faff;
+    border: 2px solid;
+    margin-bottom: 15px;
+    border-radius: 16px;
+    padding:0px;
+    height: 510px;
+    float: left;
+    width:600px;
+    margin-left:95px;
+    box-shadow: 5px 4px #3a6074;
+}
+
 .personal-info p {
     line-height: 2;
 }

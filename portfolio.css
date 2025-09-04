@@ -1,4 +1,3 @@
-
 /* * * *
 * (SITE-WIDE) GENERAL CSS
 * * * * */
@@ -110,10 +109,81 @@ header {
 * INDEX/HOME PAGE
 * * * * */
 
+.fancy-showcase {
+    width: 100%;
+    height: auto;
+}
+
+.fancy-showcase .row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.fancy-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.fancy-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: blur(0.5px);
+}
+
+.fancy-image-container img:hover {
+    filter: blur(5px);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 17.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.fancy-profile {
+    width: 24.96625%;
+    height: 500px;
+    border-top: 0.75px solid;
+    border-bottom: 0.75px solid;
+    background-color: white;
+}
+
+.fancy-dashboard {
+    width: 24.96625%;
+    height: 500px;
+    border: 0.75px solid;
+    background-color: white;
+}
+
+.fancy-faq {
+    width: 24.96625%;
+    height: 500px;
+    border: 0.75px solid;
+    background-color: white;
+}
+
+.fancy-blog {
+    width: 24.96625%;
+    height: 500px;
+    border-top: 0.75px solid;
+    border-bottom: 0.75px solid;
+    background-color: white;
+}
+
 /* Specific details for Personal Motivation article */
 .personal-motivation {
     background-color: rgb(232, 250, 255);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 /* Paragraph specifics for Personal Motivation article */
@@ -128,7 +198,7 @@ header {
 
 /* Container specifics for the row containing two blogs */
 .blog-container {
-    float:left;
+    float: left;
     width: 100%;
 }
 
@@ -136,13 +206,13 @@ header {
 .blog {
     background-color: #e1faff;
     border: 2px solid;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     border-radius: 16px;
-    padding:0px;
+    padding: 0px;
     height: 510px;
     float: left;
-    width:600px;
-    margin-left:95px;
+    width: 600px;
+    margin-left: 95px;
     box-shadow: 5px 4px #3a6074;
 }
 
@@ -153,35 +223,35 @@ header {
 /* Specifics for FAQ page content */
 .faq {
     padding-top: 10px;
-    padding-bottom: 40px;
+    margin-bottom: 315px;
 }
 
 /* Specifics for each indivual question and answer */
-.faq > details {
+.faq>details {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 /* Design Specifics for the 'question' */
-.faq > details > summary {
-  padding: 4px;
-  width: 700px;
-  border-radius: 16px;
-  background-color: rgb(99, 169, 255);
-  border: none;
-  box-shadow: 1px 1px 2px #bbbbbb;
-  cursor: pointer;
+.faq>details>summary {
+    padding: 4px;
+    width: 700px;
+    border-radius: 16px;
+    background-color: rgb(99, 169, 255);
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
 }
 
 /* Design Specifics for the 'answer' */
-.faq > details > p {
-  background-color: #10bfff;
-  border-radius: 16px;
-  padding: 4px;
-  width: 800px;
-  margin-top:5px;
-  margin-bottom:10px;
-  box-shadow: 1px 1px 2px #bbbbbb;
+.faq>details>p {
+    background-color: #10bfff;
+    border-radius: 16px;
+    padding: 4px;
+    width: 800px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 2px #bbbbbb;
 }
 
 /* * * *
@@ -196,7 +266,7 @@ header {
 /* Specifics for the curricular activities article */
 .curricular-activities {
     background-color: rgb(59, 199, 245);
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
 
 /* Specifics for the <p> tag in the curricular activities article */
@@ -226,8 +296,14 @@ header {
 }
 
 /* Specifics for <p> in the games and entertainment section in curricular activities */
-.games p, .entertainment p{
+.games p,
+.entertainment p {
     line-height: 20px;
+}
+
+.img-container {
+    float: left;
+    rotate: -10deg;
 }
 
 /* Specifics for the personal image in personal info */
@@ -248,10 +324,10 @@ header {
 * ASIDE MENU
 * * * * */
 
-ul{
+ul {
     padding-left: 0px;
     width: 210px;
-    list-style-type:none; 
+    list-style-type: none;
 }
 
 ul h3 {
@@ -259,37 +335,37 @@ ul h3 {
 }
 
 .aside-menu {
-  height: 290px;
-  width: 210px;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(119, 202, 229);
-  overflow-x: hidden;
-  padding-top: 0px;
-  margin-top: 130px;
-  margin-left: 20px;
-  border-radius: 16px;
-  box-shadow: 5px 4px #3a6074;
+    height: 290px;
+    width: 210px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(119, 202, 229);
+    overflow-x: hidden;
+    padding-top: 0px;
+    margin-top: 130px;
+    margin-left: 20px;
+    border-radius: 16px;
+    box-shadow: 5px 4px #3a6074;
 }
 
 .aside-menu a {
-  border-top: 1px solid #7fd2f0;
-  border-bottom: 1px solid #7fd2f0;
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #000000;
-  display: block;
+    border-top: 1px solid #7fd2f0;
+    border-bottom: 1px solid #7fd2f0;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+    display: block;
 }
 
 .aside-menu a:hover {
-  color: #797979;
-  background-color: rgb(77, 231, 248);
+    color: #797979;
+    background-color: rgb(77, 231, 248);
 }
 
 /* * * *
@@ -300,7 +376,10 @@ ul h3 {
     background-color: grey;
     width: 70%;
 }
-.first-year-dashboard .second-year-dashboard > tr, th, td{
+
+.first-year-dashboard .second-year-dashboard>tr,
+th,
+td {
     border: 1px solid;
     width: 180px;
     height: 30px;
@@ -308,26 +387,29 @@ ul h3 {
     font-size: 14px;
 }
 
-.first-year-dashboard .second-year-dashboard > tr, td {
+.first-year-dashboard .second-year-dashboard>tr,
+td {
     background-color: rgb(186, 238, 255);
 }
 
-.first-year-dashboard .second-year-dashboard > tr, th{
+.first-year-dashboard .second-year-dashboard>tr,
+th {
     font-size: 16px;
 }
 
-.first-year-dashboard, .second-year-dashboard {
+.first-year-dashboard,
+.second-year-dashboard {
     border: 1px solid;
 }
 
 .study-progress {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     display: flex;
-    margin-top:20px;
-    margin-left:360px;
+    margin-top: 20px;
+    margin-left: 360px;
 }
 
-.study-progress > .progbar {
+.study-progress>.progbar {
     padding-right: 20px;
     padding-left: 20px;
 }

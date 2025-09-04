@@ -1,3 +1,9 @@
+
+/* * * *
+* (SITE-WIDE) GENERAL CSS
+* * * * */
+
+/* Styling for body */
 body {
     background-color: lightblue;
     padding-top: 50px;
@@ -7,34 +13,29 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
+/* Setting up parent for grid */
 .parent {
     display: grid;
     grid-template: auto 1fr auto / auto 1fr auto;
 }
 
-header {
-    grid-column: 1 / 4;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 999;
-    box-shadow: 0px 5px 10px #a1c2bc;
-}
-
+/* Left Side of grid */
 .left-side {
     grid-column: 1 / 2;
 }
 
+/* Main content of grid */
 main {
     grid-column: 2 / 3;
     flex: 1;
 }
 
+/* Right Side of grid */
 .right-side {
     grid-column: 3 / 4;
 }
 
+/* Footer at bottom of every page */
 footer {
     background-color: rgb(99, 169, 255);
     grid-column: 1 / 4;
@@ -47,36 +48,7 @@ footer {
     box-shadow: 0px 0px 10px 0.5px #000000;
 }
 
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: rgb(144, 227, 250);
-    overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    width: 149px;
-    border-right: 2px solid #7fd2f0;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: rgb(77, 231, 248);
-    color: #797979;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #04AA6D;
-    color: black;
-}
-
+/* Design of the article boxes */
 article {
     background-color: rgb(202, 237, 247);
     padding: 5px;
@@ -89,11 +61,78 @@ article {
     box-shadow: 5px 4px #3a6074;
 }
 
+/* * * *
+* NAVIGATION BAR
+* * * * */
+
+/* Header setup */
+header {
+    grid-column: 1 / 4;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 5px 10px #a1c2bc;
+}
+
+/* Specific topnav class in header */
+.topnav {
+    background-color: rgb(144, 227, 250);
+    overflow: hidden;
+}
+
+/* The clickable links */
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 149px;
+    border-right: 2px solid #7fd2f0;
+}
+
+/* Hovering over the clickable links */
+.topnav a:hover {
+    background-color: rgb(77, 231, 248);
+    color: #797979;
+}
+
+/* Giving the currently active link a unique color */
+.topnav a.active {
+    background-color: #2ec5d6;
+    color: black;
+}
+
+/* * * *
+* INDEX/HOME PAGE
+* * * * */
+
+/* Specific details for Personal Motivation article */
+.personal-motivation {
+    background-color: rgb(232, 250, 255);
+    margin-bottom: 20px;
+}
+
+/* Paragraph specifics for Personal Motivation article */
+.personal-motivation p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* * * *
+* BLOG PAGE
+* * * * */
+
+/* Container specifics for the row containing two blogs */
 .blog-container {
     float:left;
     width: 100%;
 }
 
+/* Specifics and design for a blog div */
 .blog {
     background-color: #e1faff;
     border: 2px solid;
@@ -107,16 +146,23 @@ article {
     box-shadow: 5px 4px #3a6074;
 }
 
+/* * * *
+* FREQUENTLY ASKED QUESTIONS (FAQ) PAGE
+* * * * */
+
+/* Specifics for FAQ page content */
 .faq {
     padding-top: 10px;
     padding-bottom: 40px;
 }
 
+/* Specifics for each indivual question and answer */
 .faq > details {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+/* Design Specifics for the 'question' */
 .faq > details > summary {
   padding: 4px;
   width: 700px;
@@ -127,6 +173,7 @@ article {
   cursor: pointer;
 }
 
+/* Design Specifics for the 'answer' */
 .faq > details > p {
   background-color: #10bfff;
   border-radius: 16px;
@@ -137,28 +184,27 @@ article {
   box-shadow: 1px 1px 2px #bbbbbb;
 }
 
+/* * * *
+* PROFILE PAGE
+* * * * */
+
+/* Specifics for the <p> tag in the personal info article */
 .personal-info p {
     line-height: 2;
 }
 
-.personal-motivation {
-    background-color: rgb(135, 222, 248);
-}
-
-.personal-motivation p {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
+/* Specifics for the curricular activities article */
 .curricular-activities {
     background-color: rgb(59, 199, 245);
     margin-bottom: 15px;
 }
 
+/* Specifics for the <p> tag in the curricular activities article */
 .curricular-activities p {
     line-height: 2;
 }
 
+/* Designing the row section of the curricular activities article */
 .curricular-activities .row {
     display: flex;
     flex-wrap: wrap;
@@ -166,28 +212,41 @@ article {
 
 }
 
+/* Designing the column section of the curricular activities article */
 .curricular-activities .column {
     flex: 30%;
     padding: 0 4px;
 }
 
+/* Making sure the text below each character image is small */
 .curricular-activities .column p {
     display: block;
     margin: 0 auto;
     font-size: 14px;
 }
 
+/* Specifics for <p> in the games and entertainment section in curricular activities */
+.games p, .entertainment p{
+    line-height: 20px;
+}
+
+/* Specifics for the personal image in personal info */
 .personal-image {
     float: left;
     padding-left: 10px;
     height: 275px
 }
 
+/* Specifics for the <p> below the personal image in personal info */
 .personal-image p {
     display: block;
     margin: 0 auto;
     font-size: 14px;
 }
+
+/* * * *
+* ASIDE MENU
+* * * * */
 
 ul{
     padding-left: 0px;
@@ -200,14 +259,14 @@ ul h3 {
 }
 
 .aside-menu {
-  height: 290px; /* Full-height: remove this if you want "auto" height */
-  width: 210px; /* Set the width of the sidebar */
-  position: absolute; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 290px;
+  width: 210px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: rgb(119, 202, 229); /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: rgb(119, 202, 229);
+  overflow-x: hidden;
   padding-top: 0px;
   margin-top: 130px;
   margin-left: 20px;
@@ -215,7 +274,6 @@ ul h3 {
   box-shadow: 5px 4px #3a6074;
 }
 
-/* The navigation menu links */
 .aside-menu a {
   border-top: 1px solid #7fd2f0;
   border-bottom: 1px solid #7fd2f0;
@@ -229,32 +287,47 @@ ul h3 {
   display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
 .aside-menu a:hover {
   color: #797979;
   background-color: rgb(77, 231, 248);
 }
 
-.dashboard > tr, th, td{
+/* * * *
+* DASHBOARD PAGE
+* * * * */
+
+.dashboard-container {
+    background-color: grey;
+    width: 70%;
+}
+.first-year-dashboard .second-year-dashboard > tr, th, td{
     border: 1px solid;
     width: 180px;
+    height: 30px;
     text-align: center;
     font-size: 14px;
 }
 
-.dashboard > tr, td {
+.first-year-dashboard .second-year-dashboard > tr, td {
     background-color: rgb(186, 238, 255);
 }
 
-.dashboard > tr, th{
+.first-year-dashboard .second-year-dashboard > tr, th{
     font-size: 16px;
 }
 
-.dashboard {
+.first-year-dashboard, .second-year-dashboard {
     border: 1px solid;
 }
 
 .study-progress {
-    margin-top: 20px;
-    margin-bottom: 275px;
+    margin-bottom: 50px;
+    display: flex;
+    margin-top:20px;
+    margin-left:360px;
+}
+
+.study-progress > .progbar {
+    padding-right: 20px;
+    padding-left: 20px;
 }

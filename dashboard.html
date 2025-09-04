@@ -11,25 +11,83 @@
 
 <body>
     <div class="parent">
-    <header class="section coral">
-        <nav class="topnav">
-            <a href="index.html">Home Page</a>
-            <a href="profile.html">Profile Page</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="faq.html">FAQ</a>
-            <a href="blog.html">Blog</a> 
-        </nav>
-    </header>
-    <div class="left-side section blue"></div>
-    <main class="section green">
-        <center>
-            <h2>Dashboard</h2>
-        </center>
-    </main>
-    <div class="right-side section yellow"></div>
-    <footer class="section coral">
-        <p>V1.0.0.4</p>
-    </footer>
+        <header class="section coral">
+            <nav class="topnav">
+                <a href="index.html">Home Page</a>
+                <a href="profile.html">Profile Page</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="faq.html">FAQ</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+        </header>
+        <div class="left-side section blue"></div>
+        <main class="section green">
+            <center>
+                <h2>Dashboard</h2>
+                <div class="dashboard-container">
+                    <table class="dashboard">
+                        <tr style="background-color:rgb(153, 153, 255)">
+                            <th>Quartile</th>
+                            <th>Course</th>
+                            <th>Exam</th>
+                            <th>Exam Date</th>
+                            <th>Earnable Credits</th>
+                            <th>Exam Grade</th>
+                        </tr>
+                        <tr>
+                            <td>Q1</td>
+                            <td>PCO - CU75001V3</td>
+                            <td>First Exam Opportunity</td>
+                            <td>03-10-2025</td>
+                            <td>2.5</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Q1</td>
+                            <td>PBA - CU75003V1</td>
+                            <td>Casustoets PBA</td>
+                            <td>30-10-2025</td>
+                            <td>5</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Q1</td>
+                            <td>CSB - CU75002V2</td>
+                            <td>Schriftelijke Kennistoets</td>
+                            <td>31-10-2025</td>
+                            <td>5</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Q1</td>
+                            <td>OOP - CU75004V1</td>
+                            <td>Presentation</td>
+                            <td>Week S1.15</td>
+                            <td>5</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Q1</td>
+                            <td>OOP - CU75004V1</td>
+                            <td>Written Knowledge Test</td>
+                            <td>Week S1.20</td>
+                            <td>5</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="study-progress">
+                    <label for="progress-bar">Current Study Progress - 0/60</label> <br>
+                    <progress class="progress-bar" style="height:50px;width:350px;accent-color:green;margin-top: -7.5px;" max="100" value="0">0%</progress><br>
+                    <label for="progress-bar2">Required Study Progress - 45/60</label> <br>
+                    <progress class="progress-bar2" style="height:50px;width:350px;accent-color:crimson;margin-top:-7.5px;" max="100" value="75">0%</progress>
+                </div>
+            </center>
+        </main>
+        <div class="right-side section yellow"></div>
+        <footer class="section coral">
+            <p>V1.0.0.4</p>
+        </footer>
     </div>
 </body>
 

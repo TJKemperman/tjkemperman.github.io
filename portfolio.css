@@ -234,3 +234,27 @@ ul h3 {
   color: #797979;
   background-color: rgb(77, 231, 248);
 }
+
+.dashboard > tr, th, td{
+    border: 1px solid;
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.dashboard > tr, td {
+    background-color: rgb(186, 238, 255);
+}
+
+.dashboard > tr, th{
+    font-size: 16px;
+}
+
+.dashboard {
+    border: 1px solid;
+}
+
+.study-progress {
+    margin-top: 20px;
+    margin-bottom: 275px;
+}

@@ -304,6 +304,65 @@ header {
 .img-container {
     float: left;
     rotate: -10deg;
+    margin-left: 5px;
+}
+
+.img-container2 {
+    float: left;
+    rotate: 10deg;
+    position: absolute;
+    top: 665px;
+    margin-left: 20px;
+}
+
+.castorice-img:hover {
+    -webkit-animation: spin 2.25s linear infinite;
+    -moz-animation: spin 2.25s linear infinite;
+    animation: spin 2.25s linear infinite;
+}
+
+.firefly-img:hover {
+    -webkit-animation: spin2 2.25s linear infinite;
+    -moz-animation: spin2 2.25s linear infinite;
+    animation: spin2 2.25s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin2 {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes spin2 {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin2 {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
 }
 
 /* Specifics for the personal image in personal info */
@@ -374,14 +433,17 @@ ul h3 {
 
 .dashboard-container {
     background-color: grey;
-    width: 70%;
+    width: 80%;
+    border-radius: 8px;
+    border: 0.75px solid;
 }
 
 .first-year-dashboard .second-year-dashboard>tr,
 th,
 td {
-    border: 1px solid;
-    width: 180px;
+    border-radius: 4px;
+    border: 0.75px solid;
+    width: 200px;
     height: 30px;
     text-align: center;
     font-size: 14px;
@@ -397,11 +459,6 @@ th {
     font-size: 16px;
 }
 
-.first-year-dashboard,
-.second-year-dashboard {
-    border: 1px solid;
-}
-
 .study-progress {
     margin-bottom: 55px;
     display: flex;
@@ -412,4 +469,15 @@ th {
 .study-progress>.progbar {
     padding-right: 20px;
     padding-left: 20px;
+}
+
+.burndown-chart {
+    background-color: rgb(146, 215, 238);
+    border-radius: 8px;
+    border: 0.75px solid;
+    padding: 5px;
+    width: 1200px;
+    height: 500px;
+    margin-bottom: 50px;
+    box-shadow: 5px 4px #3a6074;
 }

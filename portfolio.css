@@ -216,6 +216,20 @@ header {
     box-shadow: 5px 4px #3a6074;
 }
 
+.blogpost-button {
+    background-color: rgb(90, 206, 244);
+    border: darkblue 1px solid;
+    border-radius: 8px;
+    width:auto;
+    height:auto;
+    text-decoration: none;
+    box-shadow: 2px 1px #3a6074;
+}
+
+.blogpost-button:hover{
+    background-color: rgb(83, 181, 213);
+}
+
 /* * * *
 * FREQUENTLY ASKED QUESTIONS (FAQ) PAGE
 * * * * */
@@ -316,15 +330,15 @@ header {
 }
 
 .castorice-img:hover {
-    -webkit-animation: spin 2.25s linear infinite;
-    -moz-animation: spin 2.25s linear infinite;
-    animation: spin 2.25s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
 }
 
 .firefly-img:hover {
-    -webkit-animation: spin2 2.25s linear infinite;
-    -moz-animation: spin2 2.25s linear infinite;
-    animation: spin2 2.25s linear infinite;
+    -webkit-animation: spin2 1s linear infinite;
+    -moz-animation: spin2 1s linear infinite;
+    animation: spin2 1s linear infinite;
 }
 
 @-moz-keyframes spin {
@@ -480,4 +494,27 @@ th {
     height: 500px;
     margin-bottom: 50px;
     box-shadow: 5px 4px #3a6074;
+}
+
+/* * * *
+* FULL BLOG POST
+* * * * */
+
+.full-blog {
+    background-color: #e1faff;
+    border: 2px solid;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 16px;
+    padding: 0px;
+    height: auto;
+    width: 1000px;
+    box-shadow: 5px 4px #3a6074;
+}
+
+.blog-description {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
 }

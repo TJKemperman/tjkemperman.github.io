@@ -36,7 +36,7 @@ main {
 
 /* Footer at bottom of every page */
 footer {
-    background-color: rgb(99, 169, 255);
+    background-color: #63a9ff;
     grid-column: 1 / 4;
     position: relative;
     left: 0;
@@ -77,7 +77,7 @@ header {
 
 /* Specific topnav class in header */
 .topnav {
-    background-color: rgb(144, 227, 250);
+    background-color: #90e3fa;
     overflow: hidden;
 }
 
@@ -192,6 +192,46 @@ header {
     padding-right: 30px;
 }
 
+.ict-skills {
+    background-color: rgb(232, 250, 255);
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.skills-container {
+    width: 90%;
+    background-color: #ddd;
+    border-radius: 16px;
+}
+
+.skills {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 16px;
+}
+
+.html {
+    width: 80%;
+    background-color: #62aeff;
+}
+
+.java {
+    width: 70%;
+    background-color: #62aeff;
+}
+
+.css {
+    width: 50%;
+    background-color: #62aeff;
+}
+
+.golang {
+    width: 30%;
+    background-color: #62aeff;
+}
+
 /* * * *
 * BLOG PAGE
 * * * * */
@@ -220,13 +260,13 @@ header {
     background-color: rgb(90, 206, 244);
     border: darkblue 1px solid;
     border-radius: 8px;
-    width:auto;
-    height:auto;
+    width: auto;
+    height: auto;
     text-decoration: none;
     box-shadow: 2px 1px #3a6074;
 }
 
-.blogpost-button:hover{
+.blogpost-button:hover {
     background-color: rgb(83, 181, 213);
 }
 
@@ -277,6 +317,10 @@ header {
     line-height: 2;
 }
 
+.social-links {
+    background-color: rgb(123, 222, 255);
+}
+
 /* Specifics for the curricular activities article */
 .curricular-activities {
     background-color: rgb(59, 199, 245);
@@ -318,7 +362,9 @@ header {
 .img-container {
     float: left;
     rotate: -10deg;
-    margin-left: 5px;
+    position: absolute;
+    top: 440px;
+    margin-left: 10px;
 }
 
 .img-container2 {
@@ -339,6 +385,13 @@ header {
     -webkit-animation: spin2 1s linear infinite;
     -moz-animation: spin2 1s linear infinite;
     animation: spin2 1s linear infinite;
+}
+
+.github-img {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    width: 40px;
 }
 
 @-moz-keyframes spin {

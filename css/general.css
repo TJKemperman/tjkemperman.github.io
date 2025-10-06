@@ -95,7 +95,7 @@ header {
 
 /* Hovering over the clickable links */
 .topnav a:hover {
-    background-color: rgb(77, 231, 248);
+    background-color: rgb(77, 202, 248);
     color: #797979;
 }
 

@@ -32,6 +32,6 @@
     box-shadow: 2px 1px #3a6074;
 }
 
-.blogpost-button:hover {
-    background-color: rgb(83, 181, 213);
+img:hover {
+    filter: blur(1.5px);
 }

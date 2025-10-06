@@ -52,3 +52,15 @@ th {
     margin-bottom: 50px;
     box-shadow: 5px 4px #3a6074;
 }
+
+.grade-good {
+    background-color: rgb(0, 172, 0);
+}
+
+.grade-mid {
+    background-color: rgb(245, 217, 0);
+}
+
+.grade-bad {
+    background-color: rgb(255, 47, 47);
+}

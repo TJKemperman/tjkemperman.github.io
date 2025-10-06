@@ -1,0 +1,126 @@
+/* * * *
+* INDEX/HOME PAGE
+* * * * */
+
+.fancy-showcase {
+    width: 100%;
+    height: auto;
+}
+
+.fancy-showcase .row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.fancy-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.fancy-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: blur(0.5px);
+}
+
+.fancy-image-container img:hover {
+    filter: blur(5px);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 17.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.fancy-profile {
+    width: 24.96625%;
+    height: 500px;
+    border-top: 0.75px solid;
+    border-bottom: 0.75px solid;
+    background-color: white;
+}
+
+.fancy-dashboard {
+    width: 24.96625%;
+    height: 500px;
+    border: 0.75px solid;
+    background-color: white;
+}
+
+.fancy-faq {
+    width: 24.96625%;
+    height: 500px;
+    border: 0.75px solid;
+    background-color: white;
+}
+
+.fancy-blog {
+    width: 24.96625%;
+    height: 500px;
+    border-top: 0.75px solid;
+    border-bottom: 0.75px solid;
+    background-color: white;
+}
+
+/* Specific details for Personal Motivation article */
+.personal-motivation {
+    background-color: rgb(232, 250, 255);
+    margin-bottom: 50px;
+}
+
+/* Paragraph specifics for Personal Motivation article */
+.personal-motivation p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.ict-skills {
+    background-color: rgb(232, 250, 255);
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.skills-container {
+    width: 90%;
+    background-color: #ddd;
+    border-radius: 16px;
+}
+
+.skills {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 16px;
+}
+
+.html {
+    width: 80%;
+    background-color: #62aeff;
+}
+
+.java {
+    width: 70%;
+    background-color: #62aeff;
+}
+
+.css {
+    width: 50%;
+    background-color: #62aeff;
+}
+
+.golang {
+    width: 30%;
+    background-color: #62aeff;
+}

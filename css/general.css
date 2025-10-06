@@ -1,0 +1,106 @@
+/* * * *
+* (SITE-WIDE) GENERAL CSS
+* * * * */
+
+/* Styling for body */
+body {
+    background-color: lightblue;
+    padding-top: 50px;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Setting up parent for grid */
+.parent {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+/* Left Side of grid */
+.left-side {
+    grid-column: 1 / 2;
+}
+
+/* Main content of grid */
+main {
+    grid-column: 2 / 3;
+    flex: 1;
+}
+
+/* Right Side of grid */
+.right-side {
+    grid-column: 3 / 4;
+}
+
+/* Footer at bottom of every page */
+footer {
+    background-color: #63a9ff;
+    grid-column: 1 / 4;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    box-shadow: 0px 0px 10px 0.5px #000000;
+}
+
+/* Design of the article boxes */
+article {
+    background-color: rgb(202, 237, 247);
+    padding: 5px;
+    width: 65%;
+    padding-bottom: 10px;
+    border: 1px solid;
+    border-color: rgb(165, 213, 229);
+    border-radius: 16px;
+    margin: 7.5px;
+    box-shadow: 5px 4px #3a6074;
+}
+
+/* * * *
+* NAVIGATION BAR
+* * * * */
+
+/* Header setup */
+header {
+    grid-column: 1 / 4;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0px 5px 10px #a1c2bc;
+}
+
+/* Specific topnav class in header */
+.topnav {
+    background-color: #90e3fa;
+    overflow: hidden;
+}
+
+/* The clickable links */
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 149px;
+    border-right: 2px solid #7fd2f0;
+}
+
+/* Hovering over the clickable links */
+.topnav a:hover {
+    background-color: rgb(77, 231, 248);
+    color: #797979;
+}
+
+/* Giving the currently active link a unique color */
+.topnav a.active {
+    background-color: #2ec5d6;
+    color: black;
+}

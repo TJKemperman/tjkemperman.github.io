@@ -1,0 +1,38 @@
+
+/* * * *
+* FREQUENTLY ASKED QUESTIONS (FAQ) PAGE
+* * * * */
+
+/* Specifics for FAQ page content */
+.faq {
+    padding-top: 10px;
+    margin-bottom: 315px;
+}
+
+/* Specifics for each indivual question and answer */
+.faq>details {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Design Specifics for the 'question' */
+.faq>details>summary {
+    padding: 4px;
+    width: 700px;
+    border-radius: 16px;
+    background-color: rgb(99, 169, 255);
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+}
+
+/* Design Specifics for the 'answer' */
+.faq>details>p {
+    background-color: #10bfff;
+    border-radius: 16px;
+    padding: 4px;
+    width: 800px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 2px #bbbbbb;
+}

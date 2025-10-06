@@ -1,0 +1,54 @@
+/* * * *
+* DASHBOARD PAGE
+* * * * */
+
+.dashboard-container {
+    background-color: grey;
+    width: 80%;
+    border-radius: 8px;
+    border: 0.75px solid;
+}
+
+.first-year-dashboard .second-year-dashboard>tr,
+th,
+td {
+    border-radius: 4px;
+    border: 0.75px solid;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.first-year-dashboard .second-year-dashboard>tr,
+td {
+    background-color: rgb(186, 238, 255);
+}
+
+.first-year-dashboard .second-year-dashboard>tr,
+th {
+    font-size: 16px;
+}
+
+.study-progress {
+    margin-bottom: 55px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 360px;
+}
+
+.study-progress>.progbar {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.burndown-chart {
+    background-color: rgb(146, 215, 238);
+    border-radius: 8px;
+    border: 0.75px solid;
+    padding: 5px;
+    width: 1200px;
+    height: 500px;
+    margin-bottom: 50px;
+    box-shadow: 5px 4px #3a6074;
+}

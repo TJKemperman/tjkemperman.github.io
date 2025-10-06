@@ -1,0 +1,185 @@
+/* * * *
+* PROFILE PAGE
+* * * * */
+
+/* Specifics for the <p> tag in the personal info article */
+.personal-info p {
+    line-height: 2;
+}
+
+.social-links {
+    background-color: rgb(123, 222, 255);
+}
+
+/* Specifics for the curricular activities article */
+.curricular-activities {
+    background-color: rgb(59, 199, 245);
+    margin-bottom: 50px;
+}
+
+/* Specifics for the <p> tag in the curricular activities article */
+.curricular-activities p {
+    line-height: 2;
+}
+
+/* Designing the row section of the curricular activities article */
+.curricular-activities .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+}
+
+/* Designing the column section of the curricular activities article */
+.curricular-activities .column {
+    flex: 30%;
+    padding: 0 4px;
+}
+
+/* Making sure the text below each character image is small */
+.curricular-activities .column p {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+/* Specifics for <p> in the games and entertainment section in curricular activities */
+.games p,
+.entertainment p {
+    line-height: 20px;
+}
+
+.img-container {
+    float: left;
+    rotate: -10deg;
+    position: absolute;
+    top: 440px;
+    margin-left: 10px;
+}
+
+.img-container2 {
+    float: left;
+    rotate: 10deg;
+    position: absolute;
+    top: 665px;
+    margin-left: 20px;
+}
+
+.castorice-img:hover {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+.firefly-img:hover {
+    -webkit-animation: spin2 1s linear infinite;
+    -moz-animation: spin2 1s linear infinite;
+    animation: spin2 1s linear infinite;
+}
+
+.github-img {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    width: 40px;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin2 {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes spin2 {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin2 {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+/* Specifics for the personal image in personal info */
+.personal-image {
+    float: left;
+    padding-left: 10px;
+    height: 275px
+}
+
+/* Specifics for the <p> below the personal image in personal info */
+.personal-image p {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+/* * * *
+* ASIDE MENU
+* * * * */
+
+ul {
+    padding-left: 0px;
+    width: 210px;
+    list-style-type: none;
+}
+
+ul h3 {
+    padding-left: 10px;
+}
+
+.aside-menu {
+    height: 290px;
+    width: 210px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(119, 202, 229);
+    overflow-x: hidden;
+    padding-top: 0px;
+    margin-top: 130px;
+    margin-left: 20px;
+    border-radius: 16px;
+    box-shadow: 5px 4px #3a6074;
+}
+
+.aside-menu a {
+    border-top: 1px solid #7fd2f0;
+    border-bottom: 1px solid #7fd2f0;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+    display: block;
+}
+
+.aside-menu a:hover {
+    color: #797979;
+    background-color: rgb(77, 231, 248);
+}

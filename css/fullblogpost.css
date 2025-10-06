@@ -1,0 +1,22 @@
+/* * * *
+* FULL BLOG POST
+* * * * */
+
+.full-blog {
+    background-color: #e1faff;
+    border: 2px solid;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 16px;
+    padding: 0px;
+    height: auto;
+    width: 1000px;
+    box-shadow: 5px 4px #3a6074;
+}
+
+.blog-description {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}

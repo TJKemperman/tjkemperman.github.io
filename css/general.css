@@ -101,6 +101,6 @@ header {
 
 /* Giving the currently active link a unique color */
 .topnav a.active {
-    background-color: #2ec5d6;
+    background-color: #4cbbe7;
     color: black;
 }

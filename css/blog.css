@@ -35,3 +35,11 @@
 img:hover {
     filter: blur(1.5px);
 }
+
+@media (min-width: 1920px) {
+    .blog-container {
+    float: left;
+    width: 100%;
+    margin-left: 210px;
+}
+}

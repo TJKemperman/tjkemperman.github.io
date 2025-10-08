@@ -124,3 +124,39 @@
     width: 30%;
     background-color: #62aeff;
 }
+
+@media (min-width: 1920px) {
+    .fancy-profile {
+    /* width: 24.96625%; */
+    width: 479px;
+    height: 500px;
+    border-top: 0.75px solid;
+    border-bottom: 0.75px solid;
+    background-color: white;
+}
+
+.fancy-dashboard {
+    /* width: 24.96625%; */
+    width: 479px;
+    height: 500px;
+    border: 0.75px solid;
+    background-color: white;
+}
+
+.fancy-faq {
+    /* width: 24.96625%; */
+    width: 479px;
+    height: 500px;
+    border: 0.75px solid;
+    background-color: white;
+}
+
+.fancy-blog {
+    /* width: 24.96625%; */
+    width: 479px;
+    height: 500px;
+    border-top: 0.75px solid;
+    border-bottom: 0.75px solid;
+    background-color: white;
+}
+}

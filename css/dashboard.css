@@ -34,7 +34,7 @@ th {
     margin-bottom: 55px;
     display: flex;
     margin-top: 20px;
-    margin-left: 360px;
+    margin-left: 370px;
 }
 
 .study-progress>.progbar {
@@ -63,4 +63,21 @@ th {
 
 .grade-bad {
     background-color: rgb(255, 47, 47);
+}
+
+@media (min-width: 1920px) {
+    .dashboard-container {
+        background-color: grey;
+        /* width: 80%; */
+        width: 1225px;
+        border-radius: 8px;
+        border: 0.75px solid;
+    }
+
+    .study-progress {
+        margin-bottom: 55px;
+        display: flex;
+        margin-top: 20px;
+        margin-left: 570px;
+    }
 }

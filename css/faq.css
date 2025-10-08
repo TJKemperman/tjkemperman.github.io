@@ -36,3 +36,10 @@
     margin-bottom: 10px;
     box-shadow: 1px 1px 2px #bbbbbb;
 }
+
+@media (min-width: 1920px) {
+    .faq {
+    padding-top: 10px;
+    margin-bottom: 535px;
+}
+}

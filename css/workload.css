@@ -1,0 +1,11 @@
+/* Specifics for the curricular activities article */
+.pba {
+    background-color: rgb(59, 199, 245);
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.csb {
+    line-height: 2;
+    margin-bottom: 20px;
+}

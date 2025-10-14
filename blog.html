@@ -20,10 +20,6 @@
                 <a href="workload.html">Workload</a>
                 <a href="faq.html">FAQ</a>
                 <a class="active" href="blog.html">Blog</a>
-                <div style="float:right;">
-                    <button id="switch" onclick="toggleSpookify()"
-                        style="background-color:rgb(255, 102, 0)">Spookify!</button>
-                </div>
             </nav>
         </header>
         <div class="left-side section blue"></div>
@@ -109,24 +105,6 @@
             <p>V1.0.1.26</p>
         </footer>
     </div>
-    <script>
-        function toggleSpookify() {
-            document.body.style.backgroundColor = "rgb(255, 120, 0)";
-
-            const header = document.querySelector("header");
-            const nav = document.querySelector(".topnav");
-            const divs = document.querySelectorAll(".blog");
-            const footer = document.querySelector("footer");
-
-            header.style.backgroundColor = "rgb(255, 80, 0)";
-            nav.style.backgroundColor = "rgb(255, 80, 0)";
-            divs.forEach(div => {
-                div.style.backgroundColor = "rgb(255, 80, 0)";
-            });
-            footer.style.backgroundColor = "rgb(0, 0, 0)";
-            footer.style.color = "rgb(255, 80, 0)";
-        }
-    </script>
 </body>
 
 </html>

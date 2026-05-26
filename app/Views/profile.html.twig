@@ -1,0 +1,83 @@
+{% extends "partials/base.html.twig" %}
+
+{% set pageTitle = "Home" %}
+
+{% block head %}
+    <link rel="stylesheet" href="css/profile.css">
+{% endblock %}
+
+{% block content %}
+    <div class="left-side section blue">
+        <div class="aside-menu">
+            <ul>
+                <h3>Aside Menu</h3>
+                <a href="https://oer.hz.nl/b8035ee8-758f-439b-96a9-c82f5abbf2e3" target="_blank"><b>The HZ HBO-ICT
+                        Course and Examination Regulations</b></a>
+                <a href="https://oer.hz.nl/93eee6aa-2bc1-454c-a56a-f8b56c62ba9f" target="_blank"><b>The
+                        Implementation
+                        Regulations of the HBO-ICT program</b></a>
+                <a href="https://learn.hz.nl/my/" target="_blank"><b>My Learn Environment</b></a>
+                <a href="https://hz.osiris-student.nl/home" target="_blank"><b>My Study Progress</b></a>
+                <a href="https://github.com/HZ-HBO-ICT" target="_blank"><b>HBO-ICT GitHub Environment</b></a>
+            </ul>
+        </div>
+    </div>
+    <main class="section green">
+        <center>
+            <h1>Tjeerd Kemperman</h1>
+            <article class="personal-info">
+                <div class="personal-image">
+                    <img src="images/profile/Tjeerd.jpg" style="width:190px;height:250px;" alt="Picture of Tjeerd Kemperman">
+                    <p>Foto van Tjeerd Kemperman</p>
+                </div>
+                <h2>Personal Information</h2>
+                <p><b>Name:</b> Tjeerd Kemperman <br>
+                    <b>Date of Birth:</b> 30/08/2001 <br>
+                    <b>Age:</b> 24<br>
+                    <b>Residency:</b> Tholen, Zeeland <br>
+                    <b>Living Conditions:</b> Parents (Mom and Dad), Younger brother (22 y/o), Two dogs
+                    (Rottweilers) <br>
+                    <b>Previous Education:</b> Software Development Scalda (MBO)
+                </p>
+            </article>
+            <!-- <article class="social-links">
+                <img src="images/github.svg" style="width: 50px;">
+            </article> -->
+            <div class="img-container">
+                <img class="castorice-img" src="images/profile/Cas.webp" style="height: 225px;" alt="Image of a Castorice emoji">
+            </div>
+            <div class="img-container2">
+                <img class="firefly-img" src="images/profile/Firefly.png" style="height: 210px;" alt="Image of a Firefly emoji">
+            </div>
+            <article class="curricular-activities">
+                <h2>Extra Curricular Activities</h2>
+                <div class="games">
+                    <p><b>Games:</b> World of Warcraft, League of Legends, Astroneer, Honkai: Star Rail.<br>
+                        <b>World of Warcraft:</b> Since Cataclysm (2010) - Ongoing (2025) <br>
+                        <b>League of Legends:</b> Since end of Season 4 (2014) - Ongoing (2025) <br>
+                        <b>Honkai: Star Rail:</b> Since release (mid 2023) - Ongoing (2025)
+                    </p>
+                </div>
+                <div class="entertainment">
+                    <p><b>Entertainment:</b> Anime, WWE.<br>
+                        <b>WWE:</b> Since WrestleMania 30 (2014) - Ongoing (2025) <br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/profile/Veigar.webp" style="height:170px;width:230px;padding:5px;" alt="Image of Veigar from LoL">
+                        <p>Veigar (League of Legends)</p>
+                    </div>
+                    <div class="column">
+                        <img src="images/profile/Castorice.webp" style="height:170px;width:300px;padding:5px;" alt="Image of Castorice from HSR">
+                        <p>Castorice (Honkai: Star Rail)</p>
+                    </div>
+                    <div class="column">
+                        <img src="images/profile/Brock Lesnar.jpeg" style="height:170px;width:300px;padding:5px;" alt="Image of Brock Lesnar from WWE">
+                        <p>Brock Lesnar (WWE)</p>
+                    </div>
+                </div>
+            </article>
+        </center>
+    </main>
+{% endblock %}

@@ -1,0 +1,16 @@
+# PHPStorm files
+.idea
+
+# Cache for twig
+cache/
+
+# Composer stuff
+vendor
+/vendor
+vendor/
+composer.lock
+.deptrac.cache
+
+# User level
+.env
+*.sqlite

@@ -5,7 +5,7 @@
 cache/
 
 # Composer stuff
-vendor/
+vendor
 composer.lock
 .deptrac.cache
 
